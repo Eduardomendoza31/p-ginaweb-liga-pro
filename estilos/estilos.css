@@ -75,7 +75,7 @@ table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Estilo de los formularios (ejemplo básico) */
+/* Estilo de los formularios */
 form {
     margin: 20px;
     padding: 10px;
@@ -119,7 +119,7 @@ button:hover {
     margin-right: 10px;
 }
 
-/* Media queries para pantallas pequeñas */
+/* Media queries para adaptar a todo tipo de pantalla */
 @media (max-width: 768px) {
     nav a {
         display: block;
