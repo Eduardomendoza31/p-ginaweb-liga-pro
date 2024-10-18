@@ -1,34 +1,156 @@
-* {
-    margin: 2px;
-    background: rgb(3, 56, 6);
-}
+/* Aplicar la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Contenedor principal */
-div {
-    width: 100%;
-    border: 2px solid red;
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
 }
-
-/* Encabezado principal */
-h1 {
-    color: rgb(1, 82, 82);
+/* Estilos del header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    font-size: 35px;
 }
 
-/* Estilos para enlaces */
-a {
-    text-decoration: none;
-    color: red;
+
+/* Estilos del header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-a:hover {
-    color: rgb(8, 43, 43);
+h1, h3 {
+    margin: 0;
 }
 
-/* Imágenes */
-img {
-    border-radius: 30%;
-    width: 100px;
-    height: 100px;
+/* Estilos para las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Estilos para las imágenes de equipos Serie A y B */
+section img {
+    max-width: 80px;
+    height: auto;
+    margin: 5px;
+}
+
+/* Estilos de la tabla de posiciones */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Estilo para las imágenes en la tabla de posiciones */
+table img {
+    width: 30px;
+    height: auto;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo de los formularios (ejemplo básico) */
+form {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos de la sección de contacto */
+#contactos01 ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contactos01 li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#contactos01 i {
+    margin-right: 10px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
 }
